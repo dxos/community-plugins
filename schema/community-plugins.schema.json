@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DXOS Community Plugins Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "plugins"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repo"],
+        "properties": {
+          "repo": {
+            "type": "string",
+            "description": "GitHub repository in owner/name form.",
+            "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+          }
+        }
+      }
+    }
+  }
+}
