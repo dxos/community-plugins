@@ -1,5 +1,7 @@
 {
   "$schema": "./schema/community-plugins.schema.json",
   "version": 1,
-  "plugins": []
+  "plugins": [
+    { "repo": "dxos/plugin-excalidraw" }
+  ]
 }
