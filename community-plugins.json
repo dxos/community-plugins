@@ -2,6 +2,7 @@
   "$schema": "./schema/community-plugins.schema.json",
   "version": 1,
   "plugins": [
-    { "repo": "dxos/plugin-excalidraw" }
+    { "repo": "dxos/plugin-excalidraw" },
+    { "repo": "dxos/plugin-youtube" },
   ]
 }
